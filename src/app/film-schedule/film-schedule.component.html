@@ -1,0 +1,27 @@
+<h2>Film Schedule</h2>
+
+<div class="filters">
+  <input [(ngModel)]="searchText" placeholder="Search by title or director" />
+  <label for="dateFilter">Filter by Date:</label>
+  <input type="date" id="dateFilter" [(ngModel)]="dateFilter" />
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Title</th>
+      <th>Director</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let film of filteredFilms()">
+      <td>{{ film.date }}</td>
+      <td>{{ film.time }}</td>
+      <td>{{ film.title }}</td>
+      <td>{{ film.director }}</td>
+    </tr>
+  </tbody>
+</table>
+
