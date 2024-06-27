@@ -1,0 +1,56 @@
+.schedule {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Festival_de_cinema_de_plein_air_de_visan.jpg');
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .schedule h2, .schedule h3 {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .schedule ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .schedule li {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .schedule {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Festival_de_cinema_de_plein_air_de_visan.jpg');
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .schedule h2, .schedule h3 {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .schedule ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .schedule li {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  

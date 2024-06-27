@@ -1,35 +1,102 @@
-h2 {
-    text-align: center;
-    color: #444;
-    margin-top: 20px;
+/* src/app/film-list/film-list.component.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Festival_de_cinema_de_plein_air_de_visan.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.film-table-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.film-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.film-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.film-table th, .film-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.film-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.film-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.film-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.film-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.film-table td i {
+  margin-right: 10px;
+  color: #009879;
+}
+
+@media (max-width: 600px) {
+  .film-table thead {
+    display: none;
   }
-  
-  table {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
+
+  .film-table, .film-table tbody, .film-table tr, .film-table td {
+    display: block;
+    width: 100%;
   }
-  
-  thead {
-    background-color: #f2f2f2;
+
+  .film-table tr {
+    margin-bottom: 15px;
   }
-  
-  th, td {
-    padding: 10px;
+
+  .film-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .film-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
     text-align: left;
-    border-bottom: 1px solid #ddd;
   }
-  
-  tr:hover {
-    background-color: #f5f5f5;
-  }
-  .filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .filters input, .filters label {
-    margin: 0 10px;
-  }
-  
+}

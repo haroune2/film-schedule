@@ -1,15 +1,12 @@
-
-
-
+ 
 <h1>Welcome to the Cinema Festival</h1>
-<p>Join us for three days of amazing films from around the world!</p>
-<h2>Films Screening</h2>
-<ul>
-  <li *ngFor="let film of films">
-    <h3>{{ film.title }} ({{ film.year }})</h3>
-    <p>Directed by: {{ film.director }}</p>
-  </li>
-</ul>
 
-<app-film-schedule></app-film-schedule>
+<app-navigation></app-navigation>
+<router-outlet></router-outlet>
+
+ 
+
+
+
 <!-- <app-article-list></app-article-list> -->
+
